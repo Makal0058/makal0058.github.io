@@ -60,17 +60,10 @@
     .btn:hover { text-decoration: none; transform: translateY(-1px); }
     section { padding: 36px 0; border-top: 1px solid var(--line); }
     h2 { font-size: 24px; margin: 0 0 20px; }
-    h3 { margin: 0 0 5px; font-size: 18px; }
     p { margin: 10px 0; }
     .lead { font-size: 17px; }
     .tags { display: flex; flex-wrap: wrap; gap: 9px; margin-top: 18px; }
     .tag { background: var(--accent-soft); color: var(--accent); padding: 5px 10px; border-radius: 999px; font-size: 13px; }
-    .card {
-      padding: 20px 22px; margin: 14px 0; background: var(--surface);
-      border: 1px solid var(--line); border-radius: 14px;
-    }
-    .meta { color: var(--muted); font-size: 14px; }
-    .project-title { display: flex; justify-content: space-between; gap: 20px; align-items: baseline; }
     footer { color: var(--muted); text-align: center; font-size: 13px; padding: 34px 0 48px; }
     @media (max-width: 700px) {
       .hero { grid-template-columns: 1fr; }
@@ -87,8 +80,6 @@
       <a class="brand" href="#top">Hangyu Li</a>
       <div class="navlinks">
         <a href="#about">About</a>
-        <a href="#research">Research</a>
-        <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
       </div>
     </div>
@@ -119,36 +110,6 @@
         <span class="tag">Latent Reasoning</span>
         <span class="tag">Large Language Models</span>
         <span class="tag">Reasoning Faithfulness</span>
-      </div>
-    </section>
-
-    <section id="research">
-      <h2>Research</h2>
-      <div class="card">
-        <h3>Latent Reasoning</h3>
-        <p>I am exploring neural architectures that perform multi-step internal reasoning in latent space rather than generating language tokens at every step, with an emphasis on multi-candidate reasoning, memory, communication, and selective information reuse.</p>
-      </div>
-      <div class="card">
-        <h3>Faithfulness of LLM Reasoning</h3>
-        <p>I study whether large language models truly follow task structure during reasoning, rather than relying on positional or candidate shortcuts.</p>
-      </div>
-    </section>
-
-    <section id="projects">
-      <h2>Selected Projects</h2>
-      <div class="card">
-        <div class="project-title">
-          <h3>Graph-Intervention Faithfulness (GIF)</h3>
-          <span class="meta">Research project</span>
-        </div>
-        <p>A framework for testing whether language models follow graph structure under controlled interventions, with diagnostics at both answer and reasoning-path levels.</p>
-      </div>
-      <div class="card">
-        <div class="project-title">
-          <h3>Latent Reasoning Engine</h3>
-          <span class="meta">Ongoing</span>
-        </div>
-        <p>Exploring Transformer-based internal reasoning with multiple latent candidates and source-aware memory, aiming to reason without requiring token-level chain-of-thought generation.</p>
       </div>
     </section>
 
